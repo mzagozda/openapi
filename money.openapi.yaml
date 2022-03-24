@@ -1,0 +1,26 @@
+openapi: 3.1.0
+info:
+  title: Mobile Common API
+  description: Mobile Common API
+  version: ${revision}
+  contact:
+    name: Maciej Zagozda
+    url: https://taskscape.com
+    email: office@taskscape.com
+paths: {}
+
+components:
+  schemas:
+    Money:
+      type: object
+      description: Structured representation of monetary value which needs to be represented as a result of dividing by 100.
+      properties:
+        value:
+          type: integer
+          description: Describes the nominal value.
+        symbol:
+          type: string
+          description: Describes the three-letter currency symbol.
+      required:
+        - value
+        - symbol
