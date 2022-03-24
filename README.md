@@ -1,2 +1,2 @@
 # openapi
-OpenAPI templates
+Attempts to provide a library of most common OpenAPI templates
