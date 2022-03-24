@@ -1,3 +1,16 @@
+openapi: 3.1.0
+info:
+  title: Mobile Common API
+  description: Mobile Common API
+  version: ${revision}
+  contact:
+    name: Maciej Zagozda
+    url: https://taskscape.com
+    email: office@taskscape.com
+paths: {}
+
+components:
+  schemas:
     Problem:
       type: object
       properties:
