@@ -1,0 +1,42 @@
+
+openapi: 3.1.0
+info:
+  title: Common API
+  description: Common API
+  version: ${revision}
+  contact:
+    name: Maciej Zagozda
+    url: https://taskscape.com
+    email: office@taskscape.com
+paths: {}
+
+components:
+  responses:
+
+   ClientErrorResponse:
+      description: The server could not understand the request due to invalid syntax
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+
+    NotFoundErrorResponse:
+      description: The server can not find the requested resource
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+
+    NotAuthenticatedErrorResponse:
+      description: 'The user must be authenticated in order to perform the operation.'
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Problem"
+
+    NotAuthorizedErrorResponse:
+      description: 'The user is not authorized to perform the operation.'
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Problem"
