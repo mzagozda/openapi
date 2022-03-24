@@ -1,7 +1,8 @@
+
 openapi: 3.1.0
 info:
-  title: Mobile Common API
-  description: Mobile Common API
+  title: Common API
+  description: Common API
   version: ${revision}
   contact:
     name: Maciej Zagozda
